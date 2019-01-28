@@ -86,38 +86,190 @@
                     </nav>
                 </div>
             </header>
+            <div class="home-banner">
+                <ul class="home-banner__carousel" data-component="carousel" data-options='{
+        "dots": true,
+        "infinite": true,
+        "speed": 500,
+        "cssEase": "linear"
+    }'>
+                    <li class="home-banner__carousel__item">
+                        <img src="images/banner-1.png">
+                        <div class="home-banner__carousel__item__conent">
+                             <h1>BLACK FRIDAY SALE <br> 40% OFF ON ALL BIG BRANDS</h1>
+ <a class="btn btn--filled btn--white" href="">Know More</a>
+
+                        </div>
+                    </li>
+                    <li class="home-banner__carousel__item">
+                        <img src="images/banner-1.png">
+                        <div class="home-banner__carousel__item__conent">
+                             <h1>BLACK FRIDAY SALE <br> 40% OFF ON ALL BIG BRANDS</h1>
+ <a class="btn btn--filled btn--white" href="">Know More</a>
+
+                        </div>
+                    </li>
+                    <li class="home-banner__carousel__item">
+                        <img src="images/banner-1.png">
+                        <div class="home-banner__carousel__item__conent">
+                             <h1>BLACK FRIDAY SALE <br> 40% OFF ON ALL BIG BRANDS</h1>
+ <a class="btn btn--filled btn--white" href="">Know More</a>
+
+                        </div>
+                    </li>
+                    <li class="home-banner__carousel__item">
+                        <img src="images/banner-1.png">
+                        <div class="home-banner__carousel__item__conent">
+                             <h1>BLACK FRIDAY SALE <br> 40% OFF ON ALL BIG BRANDS</h1>
+ <a class="btn btn--filled btn--white" href="">Know More</a>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
             <main class="content">
-                <div class="home-banner">
-                    <ul class="home-banner__carousel">
-                        <li class="home-banner__carousel__item">
-                            <img src="images/banner-1.png">
-                            <div class="home-banner__carousel__item__conent">
-                                 <h1>BLACK FRIDAY SALE <br> 40% OFF ON ALL BIG BRANDS</h1>
- <a class="btn btn--filled btn--white" href="">Know More</a>
+                <div class="shop-info container-fluid">
+                     <h3 class="shop-info__title">WHAT’S IN STORE</h3>
+
+                    <div class="row shop-info__tiles no-padding">
+                        <div class="col-md-8 no-padding">
+                            <div class="row">
+                                <div class="shop-info__tile">
+                                    <img src="images/tiles/office.png">
+                                     <h3>OFFICE LEASING / REAL ESTATE</h3>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-md-6 no-padding">
+                                    <div class="shop-info__tile full-height">
+                                        <img src="images/tiles/shop.png">
+                                         <h3>SHOP</h3>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6 no-padding">
+                                    <div class="shop-info__tile full-height">
+                                        <img src="images/tiles/deals.png">
+                                         <h3>DEALS</h3>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row col-md-4 no-padding">
+                            <div class="col-sm-6 col-md-12 no-padding">
+                                <div class="shop-info__tile full-height">
+                                    <img src="images/tiles/entertainment.png">
+                                     <h3>ENTERTAINMENT</h3>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-12 no-padding">
+                                <div class="shop-info__tile full-height">
+                                    <img src="images/tiles/food.png">
+                                     <h3>FOOD</h3>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row no-padding">
+                            <div class="col-sm-6 col-md-8 no-padding">
+                                <div class="shop-info__tile full-height">
+                                    <img src="images/tiles/stay.png">
+                                     <h3>STAY</h3>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 no-padding">
+                                <div class="shop-info__tile full-height">
+                                    <img src="images/tiles/visit.png">
+                                     <h3>COME VISIT US</h3>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 no-padding">
+                            <div class="shop-info__tile">
+                                <img src="images/tiles/wellness.png">
+                                 <h3>WELLNESS</h3>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-tiles row center-md">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <img src="images/parking.png">
+                         <h6>SPACIOUS  PARKING</h6>
+
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <img src="images/wheel-chair-accessible.png">
+                         <h6>WHEEL CHAIR ACCESSIBLE</h6>
+
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <img src="images/surprise-events.png">
+                         <h6>SURPRISE EVENTS</h6>
+
+                    </div>
+                </div>
+                <div class="deal">
+                     <h3 class="deal__title">DEALS OF THE WEEK / MONTH</h3>
+
+                     <h5 class="deal__sub-title">EXCITING OFFERS, DISCOUNTS & PROMOTIONS EVERY WEEK / MONTH</h5>
+
+                    <ul class="deal__carousel" data-component="carousel" data-options='{
+        "dots": true,
+        "infinite": true,
+        "speed": 500,
+        "cssEase": "linear",
+        "mobileFirst": true,
+        "slidesToShow": 1,
+        "slidesToScroll": 1,
+        "responsive": [
+            {
+                "breakpoint": 768,
+                    "settings": {
+                    "slidesToShow": 2,
+                    "slidesToScroll": 2
+                }
+            },
+            {
+                "breakpoint": 1024,
+                    "settings": {
+                    "slidesToShow": 3,
+                    "slidesToScroll": 3
+                }
+            }
+        ]
+    }'>
+                        <li class="deal__carousel__item">
+                            <img src="images/deal-1.png">
+                            <div class="deal__carousel__item__conent">
+                                 <h6>TOONY TUESDAY’S : 1+1 AT IMAGINE</h6>
 
                             </div>
                         </li>
-                        <li class="home-banner__carousel__item">
-                            <img src="images/banner-1.png">
-                            <div class="home-banner__carousel__item__conent">
-                                 <h1>BLACK FRIDAY SALE <br> 40% OFF ON ALL BIG BRANDS</h1>
- <a class="btn btn--filled btn--white" href="">Know More</a>
+                        <li class="deal__carousel__item">
+                            <img src="images/deal-1.png">
+                            <div class="deal__carousel__item__conent">
+                                 <h6>BUY 1 GET 1 FREE AT HARVEY’S</h6>
 
                             </div>
                         </li>
-                        <li class="home-banner__carousel__item">
-                            <img src="images/banner-1.png">
-                            <div class="home-banner__carousel__item__conent">
-                                 <h1>BLACK FRIDAY SALE <br> 40% OFF ON ALL BIG BRANDS</h1>
- <a class="btn btn--filled btn--white" href="">Know More</a>
+                        <li class="deal__carousel__item">
+                            <img src="images/deal-1.png">
+                            <div class="deal__carousel__item__conent">
+                                 <h6>$10 BUFFET AT PESTO’S</h6>
 
                             </div>
                         </li>
-                        <li class="home-banner__carousel__item">
-                            <img src="images/banner-1.png">
-                            <div class="home-banner__carousel__item__conent">
-                                 <h1>BLACK FRIDAY SALE <br> 40% OFF ON ALL BIG BRANDS</h1>
- <a class="btn btn--filled btn--white" href="">Know More</a>
+                        <li class="deal__carousel__item">
+                            <img src="images/deal-1.png">
+                            <div class="deal__carousel__item__conent">
+                                 <h6>TOONY TUESDAY’S : 1+1 AT IMAGINE</h6>
 
                             </div>
                         </li>
