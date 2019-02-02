@@ -26,6 +26,9 @@ $(document).ready(function(){
         }, 100);
         return false;
     });
+
+    //accordion
+    
     
 });
 
