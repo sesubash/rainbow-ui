@@ -27,9 +27,15 @@ $(document).ready(function(){
         return false;
     });
 
-    //accordion
-    
-    
+   // Store map
+   if($("#mainView").length){
+    //var panZoomTiger = svgPanZoom('#demo-tiger');
+    thumbnailViewer({mainViewId: 'mainView',thumbViewId: 'thumbView'});
+    $("#mainView").on("click", "text", function(){
+        console.log($(this).text())
+    });
+   }
+   
 });
 
 
