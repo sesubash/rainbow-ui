@@ -150,113 +150,156 @@
                                         <label class="control-label" for="by-category">By Category</label>
                                         <select id="by-category" class="form-control">
                                             <option value="all" selected>All</option>
-                                            <option value="booster-juice">Booster Juice</option>
-                                            <option value="disney">Disney</option>
-                                            <option value="new-york-fries">New York Fries</option>
+                                            <option value="10">Booster Juice</option>
+                                            <option value="12">Disney</option>
+                                            <option value="15">New York Fries</option>
                                         </select>
                                     </div>
                                 </div>
                             </form>
-                            <div class="row col-xs-12 col-sm-6 start-xs">
-                                <div role="presentation" class="directory__list">
+                            <div class="row directory__list-wrapper col-xs-12 center-xs">
+                                <div class="row col-xs-12 start-xs category-name hide-xs">
                                     <div class="directory__heading" role="heading" aria-level="3"> <span class="directory__title">
-                                                <h4>A</h4>
+                                            <h4></h4>
                                         </span>
 
-                                    </div>
-                                    <div role="region" aria-labelledby="directory1id" class="directory__panel">
-                                        <ul>
-                                            <li><a href="#">A store1</a>
-                                            </li>
-                                            <li><a href="#">A store 2</a>
-                                            </li>
-                                            <li><a href="#">A store 3</a>
-                                            </li>
-                                            <li><a href="#">A store 4</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="directory__heading" role="heading" aria-level="3"> <span class="directory__title">
-                                            <h4>B</h4>
-                                        </span> 
-                                    </div>
-                                    <div role="region" aria-labelledby="directory2id" class="directory__panel">
-                                        <ul>
-                                            <li><a href="#">B store 1</a>
-                                            </li>
-                                            <li><a href="#">B store 2</a>
-                                            </li>
-                                            <li><a href="#">B store 3</a>
-                                            </li>
-                                            <li><a href="#">B store 4</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="directory__heading" role="heading" aria-level="3"> <span class="directory__title">
-                                            <h4>C</h4>
-                                        </span> 
-                                    </div>
-                                    <div role="region" aria-labelledby="directory3id" class="directory__panel">
-                                        <ul>
-                                            <li><a href="#">C store</a>
-                                            </li>
-                                            <li><a href="#">C store 2</a>
-                                            </li>
-                                            <li><a href="#">C store 3</a>
-                                            </li>
-                                            <li><a href="#">C store 4</a>
-                                            </li>
-                                        </ul>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row col-xs-12 col-sm-6 start-xs">
-                                <div role="presentation" class="directory__list">
-                                    <div class="directory__heading" role="heading" aria-level="3"> <span class="directory__title">
-                                                <h4>D</h4>
-                                        </span>
+                                <div class="row col-xs-12 col-sm-6 start-xs">
+                                    <div role="presentation" class="directory__list">
+                                        <div class="directory__item">
+                                            <div class="directory__heading" role="heading" aria-level="3"> <span class="directory__title">
+                                                    <h4>A</h4>
+                                                </span>
 
-                                    </div>
-                                    <div role="region" aria-labelledby="directory1id" class="directory__panel">
-                                        <ul>
-                                            <li><a href="#">D store</a>
-                                            </li>
-                                            <li><a href="#">D store 2</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="directory__heading" role="heading" aria-level="3"> <span class="directory__title">
-                                            <h4>E</h4>
-                                        </span>
+                                            </div>
+                                            <div role="region" aria-labelledby="directory1id" class="directory__panel">
+                                                <ul>
+                                                    <li data-category="10"><a href="#">A store1</a>
 
+                                                    </li>
+                                                    <li data-category="15"><a href="#">A store 2</a>
+
+                                                    </li>
+                                                    <li data-category="12"><a href="#">A store 3</a>
+
+                                                    </li>
+                                                    <li data-category="12"><a href="#">A store 4</a>
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="directory__item">
+                                            <div class="directory__heading" role="heading" aria-level="3"> <span class="directory__title">
+                                                    <h4>B</h4>
+                                                </span> 
+                                            </div>
+                                            <div role="region" aria-labelledby="directory2id" class="directory__panel">
+                                                <ul>
+                                                    <li data-category="10"><a href="#">B store 1</a>
+
+                                                    </li>
+                                                    <li data-category="12"><a href="#">B store 2</a>
+
+                                                    </li>
+                                                    <li data-category="15"><a href="#">B store 3</a>
+
+                                                    </li>
+                                                    <li data-category="12"><a href="#">B store 4</a>
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="directory__item">
+                                            <div class="directory__heading" role="heading" aria-level="3"> <span class="directory__title">
+                                                    <h4>C</h4>
+                                                </span> 
+                                            </div>
+                                            <div role="region" aria-labelledby="directory3id" class="directory__panel">
+                                                <ul>
+                                                    <li data-category="10"><a href="#">C store</a>
+
+                                                    </li>
+                                                    <li data-category="15"><a href="#">C store 2</a>
+
+                                                    </li>
+                                                    <li data-category="10"><a href="#">C store 3</a>
+
+                                                    </li>
+                                                    <li data-category="15"><a href="#">C store 4</a>
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div role="region" aria-labelledby="directory2id" class="directory__panel">
-                                        <ul>
-                                            <li><a href="#">E store</a>
-                                            </li>
-                                            <li><a href="#">E store 2</a>
-                                            </li>
-                                            <li><a href="#">E store 3</a>
-                                            </li>
-                                            <li><a href="#">E store 4</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="directory__heading" role="heading" aria-level="3"> <span class="directory__title">
-                                            <h4>F</h4>
-                                        </span> 
-                                    </div>
-                                    <div role="region" aria-labelledby="directory3id" class="directory__panel">
-                                        <ul>
-                                            <li><a href="#">F store</a>
-                                            </li>
-                                            <li><a href="#">F store 2</a>
-                                            </li>
-                                            <li><a href="#">F store 3</a>
-                                            </li>
-                                            <li><a href="#">F store 4</a>
-                                            </li>
-                                        </ul>
+                                </div>
+                                <div class="row col-xs-12 col-sm-6 start-xs">
+                                    <div role="presentation" class="directory__list">
+                                        <div class="directory__item">
+                                            <div class="directory__heading" role="heading" aria-level="3"> <span class="directory__title">
+                                                        <h4>D</h4>
+                                                </span>
+
+                                            </div>
+                                            <div role="region" aria-labelledby="directory1id" class="directory__panel">
+                                                <ul>
+                                                    <li data-category="15"><a href="#">D store</a>
+
+                                                    </li>
+                                                    <li data-category="10"><a href="#">D store 2</a>
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="directory__item">
+                                            <div class="directory__heading" role="heading" aria-level="3"> <span class="directory__title">
+                                                    <h4>E</h4>
+                                                </span>
+
+                                            </div>
+                                            <div role="region" aria-labelledby="directory2id" class="directory__panel">
+                                                <ul>
+                                                    <li data-category="10"><a href="#">E store</a>
+
+                                                    </li>
+                                                    <li data-category="15"><a href="#">E store 2</a>
+
+                                                    </li>
+                                                    <li data-category="10"><a href="#">E store 3</a>
+
+                                                    </li>
+                                                    <li data-category="12"><a href="#">E store 4</a>
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="directory__item">
+                                            <div class="directory__heading" role="heading" aria-level="3"> <span class="directory__title">
+                                                    <h4>F</h4>
+                                                </span> 
+                                            </div>
+                                            <div role="region" aria-labelledby="directory3id" class="directory__panel">
+                                                <ul>
+                                                    <li data-category="15"><a href="#">F store</a>
+
+                                                    </li>
+                                                    <li data-category="10"><a href="#">F store 2</a>
+
+                                                    </li>
+                                                    <li data-category="15"><a href="#">F store 3</a>
+
+                                                    </li>
+                                                    <li data-category="12"><a href="#">F store 4</a>
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

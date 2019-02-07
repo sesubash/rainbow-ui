@@ -35,7 +35,28 @@ $(document).ready(function(){
         console.log($(this).text())
     });
    }
-   
+
+
+   $(document).on("change", "#by-category", function(e) {
+        
+        if($("#by-category option:selected").html().trim().toLowerCase() == "all") {
+            $(".directory").removeClass("category-sort");
+        }else {
+            $(".directory").removeClass("z-a").addClass("category-sort");
+            $(".directory .category-name h4").html($("#by-category option:selected").html());
+            $(".directory .directory__item [data-category]").hide();
+            $(".directory .directory__item [data-category="+$("#by-category").val()+"]").show()
+        }
+   });
+
+   $(document).on("change", "#by-store", function(e) {
+        if($(this).val().toLowerCase() == "z-a") {
+            $('.directory').addClass('sort-z-a').removeClass("category-sort");
+        }else {
+            $('.directory').removeClass('sort-z-a').removeClass("category-sort");
+        }
+   });
+
 });
 
 
