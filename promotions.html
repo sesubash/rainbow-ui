@@ -139,27 +139,25 @@
                         <div class="row col-xs-12 col-sm-10 col-lg-10 end-sm container">
                             <div class="form-group col-xs-6 col-sm-6 col-md-4 col-lg-3">
                                 <label class="control-label" for="by-store">By Store</label>
-                                <select id="by-store" class="form-control">
+                                <select id="promotion-by-store" class="form-control">
                                     <option value="All" selected>All Stores</option>
-                                    <option value="booster-juice">Booster Juice</option>
-                                    <option value="disney">Disney</option>
-                                    <option value="booster-juice">Old Navy</option>
-                                    <option value="new-york-fries">New York Fries</option>
+                                    <option value="1">Booster Juice</option>
+                                    <option value="2">Disney</option>
+                                    <option value="3">Old Navy</option>
                                 </select>
                             </div>
                             <div class="form-group col-xs-6 col-sm-6 col-md-4 col-lg-3">
                                 <label class="control-label" for="by-category">By Category</label>
-                                <select id="by-category" class="form-control">
+                                <select id="promotion-by-category" class="form-control">
                                     <option value="All" selected>By Category</option>
-                                    <option value="booster-juice">Booster Juice</option>
-                                    <option value="disney">Disney</option>
-                                    <option value="new-york-fries">New York Fries</option>
+                                    <option value="1">Booster Juice</option>
+                                    <option value="2">Disney</option>
                                 </select>
                             </div>
                         </div>
                     </form>
                     <div class="row col-xs-10 col-lg-10 center-xs container">
-                        <dl id="accordionGroup" role="presentation" class="Accordion" data-allow-toggle> <dt role="heading" aria-level="3">
+                        <dl id="accordionGroup" role="presentation" class="Accordion" data-allow-toggle> <dt role="heading" aria-level="3" data-category="1" data-store="1">
                                 <button aria-expanded="true" class="Accordion-trigger" aria-controls="sect1" id="accordion1id" type="button">
                                     <span class="Accordion-title">
                                             <span class="h6">Old Navy</span>
@@ -170,7 +168,8 @@
                             </dt>
 
                             <!-- section 1-->
-                            <dd id="sect1" role="region" aria-labelledby="accordion1id" class="Accordion-panel">
+                            <dd id="sect1" role="region" aria-labelledby="accordion1id" class="Accordion-panel"
+                            data-category="1" data-store="1">
                                 <div>
                                     <img src="images/promotion-1.png">
                                 </div>
@@ -178,7 +177,7 @@
 
                                 </div>
                             </dd>
-                            <!-- section 2--> <dt role="heading" aria-level="3">
+                            <!-- section 2--> <dt role="heading" aria-level="3" data-category="2" data-store="2">
                                 <button aria-expanded="false" class="Accordion-trigger" aria-controls="sect2" id="accordion2id" type="button">
                                     <span class="Accordion-title">
                                         <span class="Accordion-title">
@@ -192,7 +191,7 @@
                             </dt>
 
                             <dd id="sect2" role="region" aria-labelledby="accordion2id"
-                            class="Accordion-panel" hidden>
+                            class="Accordion-panel" data-category="2" data-store="2" hidden>
                                 <div>
                                     <img src="images/promotion-2.png">
                                     <p class="p1">Some exclusions apply, only while quantities last. Promotion subject to
@@ -202,7 +201,7 @@
 
                                 </div>
                             </dd>
-                            <!-- section 3--> <dt role="heading" aria-level="3">
+                            <!-- section 3--> <dt role="heading" aria-level="3" data-category="1" data-store="3">
                                 <button aria-expanded="false" class="Accordion-trigger" aria-controls="sect3" id="accordion3id" type="button" >
                                     <span class="Accordion-title">
                                         <span class="Accordion-title">
@@ -216,7 +215,7 @@
                             </dt>
 
                             <dd id="sect3" role="region" aria-labelledby="accordion3id"
-                            class="Accordion-panel" hidden>
+                            class="Accordion-panel" data-category="1" data-store="3" hidden>
                                 <div>Conetnt 3</div>
                                 <div class="deal-list__visit"> <a href="#" class="btn btn-outline">Visit Old Navy</a>
 

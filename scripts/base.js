@@ -112,10 +112,29 @@ $(document).ready(function(){
         }
    });
 
+
+    $(document).on("change", "#promotion-by-store, #promotion-by-category", function(e) {
+        
+        if($("#promotion-by-store").val().toLowerCase() == "all" && $("#promotion-by-category").val().toLowerCase() == "all") {
+            $("dt[data-category], dd[data-store]").show();
+            return;
+        }
+        $("#accordionGroup").show().parent().find('.no-item').remove();
+        $("dt[data-category], dd[data-store]").hide();
+        if($("#promotion-by-store").val().toLowerCase() == "all") {
+            $("dt[data-category="+$("#promotion-by-category").val()+"], dd[data-category="+$("#promotion-by-category").val()+"]").show()
+        }else if($("#promotion-by-category").val().toLowerCase() == "all") {
+            $("dt[data-store="+$("#promotion-by-store").val()+"], dd[data-store="+$("#promotion-by-store").val()+"]").show()
+        }else if($("dt[data-store="+$("#promotion-by-store").val()+"][data-category="+$("#promotion-by-category").val()+"], dd[data-store="+$("#promotion-by-store").val()+"][data-category="+$("#promotion-by-category").val()+"]").length){
+            $("dt[data-store="+$("#promotion-by-store").val()+"][data-category="+$("#promotion-by-category").val()+"], dd[data-store="+$("#promotion-by-store").val()+"][data-category="+$("#promotion-by-category").val()+"]").show()
+        }else {
+            $("#accordionGroup").hide().parent().append("<span class='no-item'>No promotions Found</span>");
+        }
+    });
+
    $(document).on("click", ".navigation__item.has-submenu", function(e) {
        $('.navigation__item.has-submenu').removeClass('menu-open');
        $(this).toggleClass('menu-open');
-
    });
 
 });
