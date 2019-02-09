@@ -28,13 +28,68 @@ $(document).ready(function(){
     });
 
    // Store map
-   if($("#mainView").length){
-    //var panZoomTiger = svgPanZoom('#demo-tiger');
-    thumbnailViewer({mainViewId: 'mainView',thumbViewId: 'thumbView'});
-    $("#mainView").on("click", "text", function(){
-        console.log($(this).text())
-    });
-   }
+        //    if($("#mainView").length){
+        //     //var panZoomTiger = svgPanZoom('#demo-tiger');
+        //     thumbnailViewer({mainViewId: 'mainView',thumbViewId: 'thumbView'});
+        //     $("#mainView").on("click", "text", function(){
+        //         console.log($(this).text())
+        //     });
+        //    }
+
+    if($("#floorView").length){
+        var images = [];
+
+        $($('#floor-images').prop('content')).find('.image').each(function() {
+            images.push({
+                    small : $(this).data('small'),
+                    big : $(this).data('big')
+                });
+        });
+    
+        var curImageIdx = 1,
+            total = images.length;
+        var wrapper = $('#floorView'),
+            curSpan = wrapper.find('.current');
+        var viewer = ImageViewer(wrapper.find('.image-container'));
+    
+        //display total count
+        wrapper.find('.total').html(total);
+    
+        function showImage(){
+            var imgObj = images[curImageIdx - 1];
+            viewer.load(imgObj.small, imgObj.big);
+            curSpan.html(curImageIdx);
+            wrapper.removeClass('first').removeClass('last');
+            if(curImageIdx == 1) {
+                wrapper.addClass('first');
+            }else if(curImageIdx == total) {
+                wrapper.addClass('last');
+            }
+        }
+    
+        wrapper.find('.next').click(function(){
+            curImageIdx++;
+            if(curImageIdx > total) curImageIdx = 1;
+            showImage();
+        });
+    
+        wrapper.find('.prev').click(function(){
+            curImageIdx--;
+            if(curImageIdx < 0) curImageIdx = total;
+            showImage();
+        });
+    
+        //initially show image
+        showImage();
+
+
+        $("#floorView .tab .first").on("click", function(){
+            wrapper.find('.prev').trigger("click");
+        });
+        $("#floorView .tab .last").on("click", function(){
+            wrapper.find('.next').trigger("click");
+        });
+    }
 
 
    $(document).on("change", "#by-category", function(e) {

@@ -137,32 +137,31 @@
                 <div class="content-block store-map">
                     <div class="row center-xs">
                         <div class="row col-xs-10 col-lg-10 center-xs container">
-                            <div id="mainViewContainer">
-                                <embed id="mainView" type="image/svg+xml" src="images/floorplan.svg" />
+                            <div id="floorView">
+                                <div class="tab">
+                                    <div class="tab-item first">First Floor</div>
+                                    <div class="tab-item last">Second Floor</div>
+                                </div>
+                                <div class="image-container"></div>
+                                <img src="images/left.svg" class="prev" />
+                                <img src="images/right.svg" class="next" />
+                                <div class="footer-info"> <span class="current"></span>/<span class="total"></span>
+
+                                </div>
                             </div>
-                            <div id="thumbViewContainer">
-                                <svg id="scopeContainer" class="thumbViewClass">
-                                    <g>
-                                        <rect id="scope" fill="red" fill-opacity="0.1" stroke="red" stroke-width="2px"
-                                        x="0" y="0" width="0" height="0" />
-                                        <line id="line1" stroke="red" stroke-width="2px" x1="0" y1="0" x2="0"
-                                        y2="0" />
-                                        <line id="line2" stroke="red" stroke-width="2px" x1="0" y1="0" x2="0"
-                                        y2="0" />
-                                    </g>
-                                </svg>
-                                <embed id="thumbView" type="image/svg+xml" src="images/floorplan.svg"
-                                class="thumbViewClass" />
-                            </div>
+                            <template id="floor-images"> <span class="image" data-small="images/first-floor.jpg" data-big="images/first-floor.jpg"></span>
+
+                                <span
+                                class="image" data-small="images/second-floor.jpg" data-big="images/second-floor.jpg"></span>
+                            </template>
                         </div>
                     </div>
-                </div>
-                <div class="deal">
-                     <h3 class="deal__title">DEALS OF THE WEEK / MONTH</h3>
+                    <div class="deal">
+                         <h3 class="deal__title">DEALS OF THE WEEK / MONTH</h3>
 
-                     <h5 class="deal__sub-title">EXCITING OFFERS, DISCOUNTS & PROMOTIONS EVERY WEEK / MONTH</h5>
+                         <h5 class="deal__sub-title">EXCITING OFFERS, DISCOUNTS & PROMOTIONS EVERY WEEK / MONTH</h5>
 
-                    <ul class="deal__carousel" data-component="carousel" data-options='{
+                        <ul class="deal__carousel" data-component="carousel" data-options='{
         "dots": true,
         "infinite": true,
         "speed": 500,
@@ -187,32 +186,32 @@
             }
         ]
     }'>
-                        <li class="deal__carousel__item">
-                            <img src="images/deal-1.png"> <a href="#" class="deal__carousel__item__conent">
+                            <li class="deal__carousel__item">
+                                <img src="images/deal-1.png"> <a href="#" class="deal__carousel__item__conent">
                 <h6>TOONY TUESDAY’S : 1+1 AT IMAGINE</h6>
             </a>
 
-                        </li>
-                        <li class="deal__carousel__item">
-                            <img src="images/deal-1.png"> <a href="#" class="deal__carousel__item__conent">
+                            </li>
+                            <li class="deal__carousel__item">
+                                <img src="images/deal-1.png"> <a href="#" class="deal__carousel__item__conent">
                 <h6>BUY 1 GET 1 FREE AT HARVEY’S</h6>
             </a>
 
-                        </li>
-                        <li class="deal__carousel__item">
-                            <img src="images/deal-1.png"> <a href="#" class="deal__carousel__item__conent">
+                            </li>
+                            <li class="deal__carousel__item">
+                                <img src="images/deal-1.png"> <a href="#" class="deal__carousel__item__conent">
                 <h6>$10 BUFFET AT PESTO’S</h6>
             </a>
 
-                        </li>
-                        <li class="deal__carousel__item">
-                            <img src="images/deal-1.png"> <a href="#" class="deal__carousel__item__conent">
+                            </li>
+                            <li class="deal__carousel__item">
+                                <img src="images/deal-1.png"> <a href="#" class="deal__carousel__item__conent">
                 <h6>TOONY TUESDAY’S : 1+1 AT IMAGINE</h6>
             </a>
 
-                        </li>
-                    </ul>
-                </div>
+                            </li>
+                        </ul>
+                    </div>
             </main>
             <div class="scroll-top" data-scroll="up">
                 <img src="images/up-arrow.svg">
@@ -309,8 +308,9 @@
             <script src="scripts/vendor/accordion-aria.js"></script>
             <script src="scripts/vendor/svg-pan-zoom.js"></script>
             <script src="scripts/vendor/thumbnailViewer.js"></script>
+            <script src="scripts/vendor/imageviewer.min.js"></script>
             <script src="scripts/base.js"></script>
-        </div>
+            </div>
     </body>
 
 </html>
