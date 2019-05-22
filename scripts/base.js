@@ -132,7 +132,7 @@ $(document).ready(function(){
         }
     });
 
-   $(document).on("click", ".navigation__item.has-submenu", function(e) {
+   $(".navigation__item.has-submenu").on("click", function(e) {
        $('.navigation__item.has-submenu').removeClass('menu-open');
        $(this).toggleClass('menu-open');
    });
