@@ -137,6 +137,8 @@ $(document).ready(function(){
        $(this).toggleClass('menu-open');
    });
 
+   objectFitImages();
+
 });
 
 
