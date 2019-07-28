@@ -39,7 +39,9 @@ $(document).ready(function(){
     if($("#floorView").length){
         var images = [];
 
-        $($('#floor-images').prop('content')).find('.image').each(function() {
+        var $images = $('#floor-images').find('.image').length ? $('#floor-images').find('.image') : $($('#floor-images').prop('content')).find('.image');
+
+        $images.each(function() {
             images.push({
                     small : $(this).data('small'),
                     big : $(this).data('big')
